@@ -1,0 +1,42 @@
+.card {
+width: $card-width;
+padding: 16px;
+border: 1px solid #ccc;
+background-color: #fff;
+transition: transform $transition-time;
+&__image {
+display: block;
+width: 100%;
+margin-bottom: 16px;
+}
+&__title {
+font-size: 14px;
+margin: 0 0 16px;
+transition: color $transition-time;
+}
+&__price {
+font-weight: bold;
+margin: 0 0 16px;
+}
+&__button {
+display: block;
+text-align: center;
+padding: 10px;
+background-color: $button-bg;
+color: #fff;
+text-decoration: none;
+transition: background-color $transition-time,
+color $transition-time;
+&:hover {
+  background-color: $button-hover-bg;
+  color: $button-hover-text;
+}
+
+}
+&:hover {
+transform: scale(1.2);
+}
+&:hover .card__title {
+color: $card-hover-title;
+}
+}
